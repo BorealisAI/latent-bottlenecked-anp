@@ -1,0 +1,9 @@
+attrdict==2.0.1
+einops==0.6.0
+matplotlib==3.5.3
+numpy==1.21.6
+Pillow==9.4.0
+PyYAML==6.0
+torch==1.13.1
+torchvision==0.14.1
+tqdm==4.64.1
