@@ -221,7 +221,7 @@ def train(args, model):
     torch.cuda.manual_seed(args.cmab_train_seed)
 
     dataset = get_bandit_dataset(args)
-    optimizer = torch.optim.Adam(model.parameters(), lr=args.lr, weight_decay=args.wd)
+    optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=int(args.num_epochs / args.cmab_train_update_freq))
     device = args.device
 

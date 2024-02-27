@@ -44,8 +44,7 @@ def get_args():
     # Training
     parser.add_argument('--pretrain', action='store_true', default=False)
     parser.add_argument('--lr', type=float, default=5e-4)
-    parser.add_argument('--wd', type=float, default=5e-5)
-    parser.add_argument('--num_epochs', type=int, default=100)
+    parser.add_argument('--num_epochs', type=int, default=100000)
     parser.add_argument('--print_freq', type=int, default=200)
     parser.add_argument('--eval_freq', type=int, default=5000)
     parser.add_argument('--save_freq', type=int, default=1000)
