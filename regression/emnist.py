@@ -92,9 +92,7 @@ def main():
         config = yaml.safe_load(f)
 
 
-    args.tb_log_dir = args.root # Setup log directory for Tensorboard!
-    args.save_path = args.tb_log_dir + "exp_logs.pkl.gz"
-    args.enable_tensorboard = True
+    args.save_path = args.root + "exp_logs.pkl.gz"
     for key, val in vars(args).items(): # Override the default arguments
         if key in config:
             config[key] = val
